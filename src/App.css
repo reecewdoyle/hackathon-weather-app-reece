@@ -23,3 +23,14 @@ body{
   background-color: #ffffff;
   color: #555555;
 }
+
+.search-engine button{
+  border: none;
+  border-radius: 8px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 15px;
+}
