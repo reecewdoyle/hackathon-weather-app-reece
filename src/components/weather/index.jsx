@@ -60,8 +60,18 @@ export default function Weather(){
                 </div>
                 <div>{weatherData?.main?.temp}</div>
                 <p className="description">
-                    {weatherData && weatherData[0] ? weatherData[0].description : ''}
+                    {weatherData && weatherData.weather && weatherData.weather[0] ? weatherData.weather[0].description : ''}
                 </p>
+                <div className="weather-info">
+                    <div>
+                        <p className="wind">{weatherData?.wind?.speed}</p>
+                        <p>Wind Speed</p>
+                    </div>
+                    <div>
+                        <p className="humidity">{weatherData?.main?.humidity}%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
             </div>
 
         }
